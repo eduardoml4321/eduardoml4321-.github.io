@@ -1,0 +1,121 @@
+body {
+    background: #C02425;  
+    background: -webkit-linear-gradient(to right, #F0CB35, #C02425); 
+    background: linear-gradient(to right, #F0CB35, #C02425); 
+    ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+.logo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+form {
+    display: inline-block;
+}
+.botones-ingresar-registrarme button{
+    width: 100px;
+    padding: 10px;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px; 
+    border-radius: 10%;
+    
+}
+.campo {
+    margin-bottom: 10px;
+    align-items: left;
+    text-align: left;
+}
+
+.opciones {
+    display: flex;
+    flex-direction: column;
+}
+
+.remember-section {
+    margin-bottom: 10px; 
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.campo input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.campo input:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, box
+}
+.forgot-password-section {
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+    
+}
+
+.remember-section{
+    text-align: left; 
+
+}
+.opcion-registro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.opcion-registro img {
+    width: 35px;
+    height: 35px;
+    margin-right: 25px;
+}
