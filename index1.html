@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SegurAppPe</title>
+    <link rel="stylesheet" href="css/styles1.css">
+    <script src="scripts1.js"></script>
+</head>
+
+<body>
+    <div class="container" id="login-container">
+        <div class="logo">
+            <img src="img/SegurAppPe_logo.jpg" alt="SegurAppPe">
+        </div>
+        <div class="formulario">
+            <form id="formulario">
+                <div class="botones-ingresar-registrarme">
+                    <button type="button" id="btnIngresar">Ingresar</button>
+                    <button type="button" id="btnRegistrarme" style="background: #C02425;
+                    background: -webkit-linear-gradient(to right, #F0CB35, #C02425);
+                    background: linear-gradient(to right, #F0CB35, #C02425);">Registrarme</button>
+                </div>
+                <div class="campo" id="campo-nombre">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="mensaje-fondo" id="mensaje-nombre">Ingrese nombre completo</span>
+                </div>
+                <div class="campo">
+                    <label for="Apellido">Apellido:</label>
+                    <input type="text" id="Apellido" name="Apellido" required>
+                    <span class="mensaje-fondo" id="mensaje-apellido">Ingrese sus apellidos</span>
+                </div>
+                <div class="campo" id="campo-numero">
+                    <label for="numero">Número:</label>
+                    <input type="text" id="numero" name="numero" required>
+                    <span class="mensaje-fondo" id="mensaje-numero">Ingrese su número</span>
+                </div>
+
+                <div class="campo" id="campo-email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="mensaje-fondo" id="mensaje-email">Ingrese su email</span>
+                </div>
+
+                <div class="campo" id="campo-contrasena">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                    <span class="mensaje-fondo" id="mensaje-contrasena">Ingrese su contraseña</span>
+                </div>
+                <div class="opciones">
+                    <div class="remember-section">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Estoy de acuerdo con <a href="www.google.com"><b>Politica de Privacidad</b></a></label>
+                    </div>
+                </div>
+                <button type="submit">Iniciar sesión</button>
+                <p style="margin-right: 25px;">O</p>
+                <div class="opcion-registro">
+                    <img src="img/google_logo.png" alt="img1">
+                    <img src="img/facebook.svg.webp" alt="img2">
+                    <img src="img/apple_logo.png" alt="img3">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        var inputNombre = document.getElementById('name');
+        var mensajeNombre = document.getElementById('mensaje-nombre');
+        var inputApellido = document.getElementById('Apellido');
+        var mensajeApellido = document.getElementById('mensaje-apellido');
+        var inputNumero = document.getElementById('numero');
+        var mensajeNumero = document.getElementById('mensaje-numero');
+        var inputEmail = document.getElementById('email');
+        var mensajeEmail = document.getElementById('mensaje-email');
+        var inputContrasena = document.getElementById('contrasena');
+        var mensajeContrasena = document.getElementById('mensaje-contrasena');
+
+        inputNombre.addEventListener('focus', function () {
+            mensajeNombre.style.opacity = '0';
+        });
+
+        inputNombre.addEventListener('blur', function () {
+            if (!inputNombre.value) {
+                mensajeNombre.style.opacity = '1';
+            }
+        });
+        //*
+
+        inputApellido.addEventListener('focus', function () {
+            mensajeApellido.style.opacity = '0';
+        });
+
+        inputApellido.addEventListener('blur', function () {
+            if (!inputApellido.value) {
+                mensajeApellido.style.opacity = '1';
+            }
+        });
+
+        //*
+        inputNumero.addEventListener('focus', function () {
+            mensajeNumero.style.opacity = '0';
+        });
+
+        inputNumero.addEventListener('blur', function () {
+            if (!inputNumero.value) {
+                mensajeNumero.style.opacity = '1';
+            }
+        });
+
+        inputEmail.addEventListener('focus', function () {
+            mensajeEmail.style.opacity = '0';
+        });
+
+        inputEmail.addEventListener('blur', function () {
+            if (!inputEmail.value) {
+                mensajeEmail.style.opacity = '1';
+            }
+        });
+
+        inputContrasena.addEventListener('focus', function () {
+            mensajeContrasena.style.opacity = '0';
+        });
+
+        inputContrasena.addEventListener('blur', function () {
+            if (!inputContrasena.value) {
+                mensajeContrasena.style.opacity = '1';
+            }
+        });
+
+    </script>
+</body>
+
+</html>
